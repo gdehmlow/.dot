@@ -27,3 +27,11 @@ if [ "$(uname)" == "Darwin" ]; then
   cd base16-iterm2
   open .
 fi
+
+# Install Homebrew
+echo "Installing Homebrew"
+ruby -e "$(curl -fsSL https://raw.github.com/mxcl/homebrew/go)"
+# Install RVM
+echo "Installing RVM"
+\curl -L https://get.rvm.io | bash -s stable
+
